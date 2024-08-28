@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- RESPETAR JERARQUIAS 1-reset 2- styles -->
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="headerContent">
+                <h1>Maximiliano Frias</h1>
+                <p>Esta es mi pagina web</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Header -->
+    
+    <!-- Hero / info personal -->
+
+    <section class="acerca">
+        <div class="heroContainer">
+            <div class="aboutText">
+                <p>Hola me llamo Maximiliano Frias tengo 21 años y vivo en Argentina. Mis intereses son la ciencia, la programación y cocinar.</p>
+                <p>Estas son las tecnologias que manejo:</p>
+            </div>
+            <div class="tecnologias">
+                <aside class="cardContainer">
+                    <div class="card">
+                        <img src="./img/html.png" alt="html">
+                        <h3>Html</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/css.png" alt="css">
+                        <h3>Css</h3>
+                    </div>
+                    <div class="card">
+                        <img src="./img/js.png" alt="js"> 
+                        <h3>Javascript</h3>
+                    </div>
+                </aside>
+        </div>
+    </section>
+
+    <!-- Hero / info personal -->
+
+    <!-- Mis actividades favoritas (implementar js luego) -->
+
+    <section class="actividades">
+        <div class="formContainer">
+                <form id="activity-form">
+                    <input type="text" id="nombreActividad" placeholder="Nombre de la actividad" class="titulo">
+                    <input type="text" id="descripcionActividad" placeholder="Descripción de la actividad" class="descripcion">
+                    <input type="url" name="url" id="linkImg" placeholder="Link de imagen" class="link" required>
+                    <button type="submit">Agregar actividad.</button> <!--Conectar function-->
+                </form>
+        </div>
+        <div id="activity-container" class="activityContainer">
+            <!-- div para poner las actividades -->
+            <p class="onloadText"></p>
+        </div>
+    </section>
+
+
+
+    <script src="./scripts/index.js"></script>
+    <!-- Font awesome // iconos -->
+    <script src="https://kit.fontawesome.com/824702437c.js" crossorigin="anonymous"></script>
+</body>
+</html>
